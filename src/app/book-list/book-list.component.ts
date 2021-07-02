@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BOOK } from "../shared/book";
+
+import { Book } from '../shared/book';
 
 @Component({
   selector: 'bm-book-list',
@@ -7,7 +8,11 @@ import { BOOK } from "../shared/book";
   styleUrls: ['./book-list.component.css']
 })
 export class BookListComponent implements OnInit {
-  books: BOOK[] = [];
+  books: Book[] = [];
+
+  constructor() {
+    this.books = [];
+  }
 
   ngOnInit(): void {
     this.books = [
