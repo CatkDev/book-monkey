@@ -3,6 +3,7 @@
     class="item"
     *ngFor="let b of books"
     [book]="b"
+    (click)="showDetails(b)"
   >
   </bm-book-list-item>
 </div>

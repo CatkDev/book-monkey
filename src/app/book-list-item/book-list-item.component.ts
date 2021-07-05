@@ -9,7 +9,7 @@ import { Book } from "../shared/book";
 })
 export class BookListItemComponent implements OnInit {
 
-  @Input() book!: Book;
+  @Input() book?: Book;
 
   ngOnInit(): void {
   }
